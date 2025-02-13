@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <h2>Image Gallery</h2>
+    <section>
+        <div class="gallery" id="gallery"></div> 
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">×</span>
+            <button class="prev" onclick="changeImage(-1)">❮</button>
+            <img id="lightbox-img">
+            <button class="next" onclick="changeImage(1)">❯</button>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
